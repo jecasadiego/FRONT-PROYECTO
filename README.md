@@ -25,6 +25,24 @@ Para generar la version de produccion:
 npm run build
 ```
 
+## Deploy en GitHub Pages
+
+El proyecto queda preparado para publicarse en GitHub Pages usando GitHub Actions.
+
+- URL esperada: `https://jecasadiego.github.io/FRONT-PROYECTO/`
+- API de produccion: `https://api-proyecto-2-jb7u.onrender.com/api/v1`
+- El frontend usa `HashRouter` para evitar errores de rutas al recargar en GitHub Pages.
+
+Pasos:
+
+1. En GitHub, entra al repositorio `FRONT-PROYECTO`.
+2. Ve a `Settings > Pages`.
+3. En `Build and deployment`, selecciona `Source: GitHub Actions`.
+4. Haz push a `main`.
+5. Espera a que el workflow publique el contenido.
+
+El workflow vive en `.github/workflows/deploy-pages.yml`.
+
 ## Modulos implementados
 
 - Resumen general del sistema
